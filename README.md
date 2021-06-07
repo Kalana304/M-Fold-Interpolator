@@ -5,6 +5,6 @@ This report discusses the design and implementation of an M-fold interpolator, w
 ## Table of Content
   1. [Introduction](#introduction)
   2. [Methodology](#method)
-        2.1 [Deriving Filter specifications](#theory)
+  *[Deriving Filter specifications](#theory)
   3. [Results](#results)
   4. [Conclusion](#conclusion)
