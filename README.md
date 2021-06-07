@@ -30,3 +30,11 @@ The closed form direct approach is used by following the Fourier series method t
 The time domain and frequency domain representation of the filters are obtained throughout the different design stages to evaluate the filter characteristics. The frequency responses of the filters were obtained primarily through the Fast Fourier Transform (FFT) algorithm implementation which provides a faster implementation of the Discrete Fourier Transform (DFT). The filters were then evaluated for its capability of successful re-sampling of the original signal with negligible distortion and computations complexities and the reduction of computation complexity with the efficient implementations.</div>
 
 ## METHODOLOGY
+
+<div align="justify">
+The project has the following requirements.
+- Deriving the Ideal Passband Gain, Passband, and Stopband Edge frequencies for the Anti-Imaging filters to be designed
+- Designing Anti-Imaging filters with two different Stopband attenuations, 𝐻30(𝑧) and 𝐻60(𝑧)
+- Implementing the designed Anti-Imaging filters in Polyphase structure and the M-fold interpolators using the Efficient structure
+- Evaluating the performance of the M-fold interpolators in-terms of the ability to re-sample the original signal and the computational complexities.
+</div>
