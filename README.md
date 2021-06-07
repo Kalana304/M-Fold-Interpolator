@@ -51,7 +51,7 @@ The passband gains, passband and stopband edges with widest possible transition 
 
 First, consider the continuous time signal x<sub>c</sub>(t) = 2cos(2&pi;f&theta;t) that corresponds to the given sequence x[n] = 2cos(2&pi;f<sub>0</sub>nT<sub>s</sub>), which is bandlimited. Using the Fourier transform, we obtain the frequency representation of the x<sub>c</sub>(t), denoted by 𝑋<sub>c</sub>(&Omega;) as follows:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+$ \sum_{\forall i}{x_i^{2}} $
 
 𝑋𝑐(Ω)=2πδ(Ω−Ω0)+2πδ(Ω+Ω0),𝑤ℎ𝑒𝑟𝑒 Ω0=2π𝑓0
 By sampling the 𝑥𝑐(𝑡) at a sampling rate of 𝑓𝑠 ( ≥2𝑓0), we can obtain the 𝑥𝑠(𝑡) with the Fourier Transform of 𝑋𝑠(Ω) as follows: 𝑥𝑠(𝑡)=Σ𝑥𝑐(𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞ = Σ2𝑐𝑜𝑠(2π𝑓0𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞
