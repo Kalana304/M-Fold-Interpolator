@@ -35,8 +35,28 @@ The time domain and frequency domain representation of the filters are obtained 
 The project has the following requirements.
   
 - Deriving the Ideal Passband Gain, Passband, and Stopband Edge frequencies for the Anti-Imaging filters to be designed
-- Designing Anti-Imaging filters with two different Stopband attenuations, 𝐻30(𝑧) and 𝐻60(𝑧)
+  - Designing Anti-Imaging filters with two different Stopband attenuations, 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧)
 - Implementing the designed Anti-Imaging filters in Polyphase structure and the M-fold interpolators using the Efficient structure
 - Evaluating the performance of the M-fold interpolators in-terms of the ability to re-sample the original signal and the computational complexities.
   
 </div>
+
+# Deriving Filter specifications
+
+# Deriving the Kaiser Window parameters
+
+# Polyphase Filter Implementation
+
+# Filter Evaluation
+
+## RESULTS
+
+# Time and Frequency domain analysis of the designed filters
+
+# Polyphase Filter Magnitude Spectra
+
+# Filter Evaluation
+
+## CONCLUSION
+
+## REFERENCES
