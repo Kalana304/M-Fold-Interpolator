@@ -35,13 +35,17 @@ The time domain and frequency domain representation of the filters are obtained 
 The project has the following requirements.
   
 - Deriving the Ideal Passband Gain, Passband, and Stopband Edge frequencies for the Anti-Imaging filters to be designed
-  - Designing Anti-Imaging filters with two different Stopband attenuations, 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧)
+- Designing Anti-Imaging filters with two different Stopband attenuations, 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧)
 - Implementing the designed Anti-Imaging filters in Polyphase structure and the M-fold interpolators using the Efficient structure
 - Evaluating the performance of the M-fold interpolators in-terms of the ability to re-sample the original signal and the computational complexities.
   
 </div>
 
 ### Deriving Filter specifications
+
+The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I will be employing the concepts of the sampling theory.
+
+
 
 ### Deriving the Kaiser Window parameters
 
