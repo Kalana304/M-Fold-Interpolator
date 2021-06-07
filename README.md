@@ -41,21 +41,21 @@ The project has the following requirements.
   
 </div>
 
-# Deriving Filter specifications
+### Deriving Filter specifications
 
-# Deriving the Kaiser Window parameters
+### Deriving the Kaiser Window parameters
 
-# Polyphase Filter Implementation
+### Polyphase Filter Implementation
 
-# Filter Evaluation
+### Filter Evaluation
 
 ## RESULTS
 
 # Time and Frequency domain analysis of the designed filters
 
-# Polyphase Filter Magnitude Spectra
+### Polyphase Filter Magnitude Spectra
 
-# Filter Evaluation
+### Filter Evaluation
 
 ## CONCLUSION
 
