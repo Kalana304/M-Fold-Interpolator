@@ -79,8 +79,20 @@ Using the relationship of 𝛿(𝑥𝑇)=𝑇𝛿(𝑥):
   <img src="Results/Equations/Eq05.png" />
 </p>
 
-𝑋(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠𝑘−𝜔0)+ 𝛿( 𝜔−𝜔𝑠𝑘+𝜔0)]∞𝑘= −∞
-Now consider the upsampled signal, 𝑢[𝑛] by a factor 𝑀 ∈ ℤ+ and its Fourier transform 𝑈(𝜔). 𝑢[𝑛]= {𝑥[𝑛𝑀],𝑖𝑓 𝑀|𝑛 0,𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 𝑈(𝜔)=𝑋(𝑀𝜔)= 2𝜋 Σ[𝛿( M𝜔−𝜔𝑠𝑘−𝜔0)+ 𝛿( M𝜔−𝜔𝑠𝑘+𝜔0)]∞𝑘= −∞ 𝑈(𝜔)=2𝜋 Σ[𝛿( M(𝜔−𝜔𝑠𝑘𝑀−𝜔0𝑀))+ 𝛿( M(𝜔−𝜔𝑠𝑘𝑀+𝜔0𝑀))]∞𝑘= −∞ 𝑈(𝜔)=2𝜋𝑀 Σ[𝛿( 𝜔−𝜔𝑠𝑘𝑀−𝜔0𝑀)+ 𝛿( 𝜔−𝜔𝑠𝑘𝑀+𝜔0𝑀)]∞𝑘= −∞ Now consider a sampled signal 𝑥𝑢[𝑛] at a sampling frequency 𝑓𝑠′=𝑀𝑓𝑠 with a Fourier transformation 𝑋𝑢(𝜔). 𝑋𝑢(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠′ 𝑘−𝜔0)+ 𝛿( 𝜔−𝜔𝑠′ 𝑘+𝜔0)], 𝑤ℎ𝑒𝑟𝑒 𝜔𝑠′ =𝑀𝜔𝑠∞𝑘= −∞ Since 𝜔𝑠′ 𝑘= 𝑀𝜔𝑠𝑘=2𝜋𝑓𝑠(𝑀𝑘), this has the same impact when taking the summation from −∞ to ∞ as with 2𝜋𝑓𝑠𝑘. By changing the summation variable to 𝑘′=𝑀𝑘: 𝑋𝑢(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠𝑘′−𝜔0)+ 𝛿( 𝜔−𝜔𝑠𝑘′+𝜔0)]∞𝑘′= −∞ The objective of the interpolator is to process and convert a sequence sampled at a lower sampling frequency to a higher sampling frequency by a factor 𝑀 ∈ ℤ+. Hence by definition, 𝑦[𝑛] and 𝑥𝑢[𝑛] should be the same and that results 𝑌(𝜔) and 𝑋𝑢(𝜔) to be same.
+Now consider the upsampled signal, 𝑢[𝑛] by a factor 𝑀 ∈ ℤ<sup>+</sup> and its Fourier transform 𝑈(&omega;). 
+
+<p align="center">
+  <img src="Results/Equations/Eq06.png" />
+</p>
+
+Now consider a sampled signal 𝑥<sub>𝑢</sub>[𝑛] at a sampling frequency 𝑓<sub>𝑠</sub>′=𝑀𝑓<sub>𝑠</sub> with a Fourier transformation 𝑋<sub>𝑢</sub>(�&omega;). 
+
+<p align="center">
+  <img src="Results/Equations/Eq07.png" />
+</p>
+
+
+𝑋𝑢(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠′ 𝑘−𝜔0)+ 𝛿( 𝜔−𝜔𝑠′ 𝑘+𝜔0)], 𝑤ℎ𝑒𝑟𝑒 𝜔𝑠′ =𝑀𝜔𝑠∞𝑘= −∞ Since 𝜔𝑠′ 𝑘= 𝑀𝜔𝑠𝑘=2𝜋𝑓𝑠(𝑀𝑘), this has the same impact when taking the summation from −∞ to ∞ as with 2𝜋𝑓𝑠𝑘. By changing the summation variable to 𝑘′=𝑀𝑘: 𝑋𝑢(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠𝑘′−𝜔0)+ 𝛿( 𝜔−𝜔𝑠𝑘′+𝜔0)]∞𝑘′= −∞ The objective of the interpolator is to process and convert a sequence sampled at a lower sampling frequency to a higher sampling frequency by a factor 𝑀 ∈ ℤ+. Hence by definition, 𝑦[𝑛] and 𝑥𝑢[𝑛] should be the same and that results 𝑌(𝜔) and 𝑋𝑢(𝜔) to be same.
 4
 The spectral components of 𝑥𝑢[𝑛] will be located at 2𝜋𝑓0𝑀𝑓𝑠 𝑟𝑎𝑑/𝑠𝑎𝑚𝑝𝑙𝑒 within the 0− 𝜋 𝑟𝑎𝑑/𝑠𝑎𝑚𝑝𝑙𝑒. During the upsampling, the phenomena known as “imaging” occurs where multiple spectral components get located within 0− 𝜋 𝑟𝑎𝑑/𝑠𝑎𝑚𝑝𝑙𝑒 including the spectral component at 2𝜋𝑓0𝑀𝑓𝑠 in the spectra of 𝑢[𝑛]. To remove the unnecessary images present and to filter the spectral component at 2𝜋𝑓0𝑀𝑓𝑠 from 𝑈(𝜔) following Ideal Low-Pass filter can be defined. 𝐻(𝜔)= {𝐺𝑝,𝑓𝑜𝑟 0 ≤ |𝜔| ≤ 𝜋𝑀0,𝑓𝑜𝑟 𝜋𝑀 ≤ |𝜔| ≤ 𝜋
 Then we can obtain the 𝑌(𝜔) as follows: 𝑌(𝜔)=2𝜋𝐺𝑝𝑀 Σ[𝛿( 𝜔−𝜔𝑠𝑘𝑀−𝜔0𝑀)+ 𝛿( 𝜔−𝜔𝑠𝑘𝑀+𝜔0𝑀)]∞𝑘= −∞
