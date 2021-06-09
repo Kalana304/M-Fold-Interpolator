@@ -64,7 +64,11 @@ The passband gains, passband and stopband edges with widest possible transition 
 Since the requirement of this project does not need to manually implement the Kaiser windowing method for filter design, the command kaiserord on MATLAB was used to obtain the filter orders 𝑁<sub>𝑃, 30</sub> and 𝑁<sub>𝑃, 60</sub>. Due to the restrictions of the transition band obtained in the previous section, the orders of the two filters, 𝐻<sub>30</sub>(𝑧), 𝐻<sub>60</sub>(𝑧), are slightly higher compared to the theoretically derived filter orders 𝑁<sub>𝑇, 30</sub> and 𝑁<sub>𝑇, 60</sub>. To check out the theoratical derivation of the Kaiser Window parameters check the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
 </div>
 
-```
+###### Derived Kaiser window parameters for 30dB filter (left) and 60dB filter (right)
+
+<div align="center">
+
+<table>
 |  Parameter  | Value | Units |     |  Parameter  | Value | Units |
 | :----------------: |:------------:| :-------:| :----: | :----------------: |:------------:| :-------:| 
 |𝛿̃<sub>𝑝</sub>       | 0.00576 | - |  |𝛿̃<sub>𝑝</sub>      | 0.00576 | - |
@@ -74,7 +78,9 @@ Since the requirement of this project does not need to manually implement the Ka
 |A<sub>p, 30</sub>    | 0.1 | dB |  |A<sub>p, 30</sub>    | 0.1 | dB |
 |𝑁<sub>𝑇, 30</sub>   | 22 | - |  |𝑁<sub>𝑇, 30</sub>   | 30 | - |
 |𝑁<sub>𝑃, 30</sub>   | 26 | - |  |𝑁<sub>𝑃, 30</sub>   | 38 | - |
-```
+
+</table>
+</div>
 
 ### Polyphase Filter Implementation
 
@@ -83,20 +89,19 @@ After the order of each filter 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(�
 
 Based on the polyphase decomposition the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were implemented following a Type-I design which is shown below.
 </div>
-```
+
 <p align = "center">
   <img src = "Results/Polyphase.png"/>
 </p>
-```
+
 <div align="justify">
 Next, the M-fold interpolator was implemented in the efficient structure derived during the class such that the computation complexity is reduced when processing a sequence. This is shown in the below figure.
 </div>
 
-```
 <p align = "center">
   <img src = "Results/Efficient Implementation.png"/>
 </p>
-```
+
 <div align="justify">
 In MATLAB, the delaying of the sequences obtained in Type-I implementation is done by shifting the row vectors by the corresponding number of samples.
 </div>
