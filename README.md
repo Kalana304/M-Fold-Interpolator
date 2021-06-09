@@ -45,14 +45,21 @@ The project has the following requirements.
 
 The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I employed the concepts of the sampling theory. For the complete derivation, check the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
 
-###### Provided Parameters
+###### Derived and Specified Parameters
 |  Parameter  | Symbol | Value | Units | 
 | :----------------: |:------------:| :-------:| :--------: | 
 |Upsampling factor  | M | 4 | - | 
 |Fundamental frequency   | &Omega;<sub>0</sub> | 60&pi; | rad/s |
 |Sampling frequency     | &Omega;<sub>s</sub> | 200&pi; | rad/s |
-
-
+|Passband Gain   | G<sub>p</sub> | 4 | - |
+|Stopband Gain     | G<sub>s</sub> | 0 | - |
+|Passband Edge Frequency   | &Omega;<sub>p</sub> | 188.496 | rad/s |
+|Cut-off Frequency     | &Omega;<sub>c</sub> | 314.159 | rad/s |
+|Stopband Edge Frequency   | &Omega;<sub>ss</sub> | 439.823 | rad/s |
+|Transition width     | B<sub>T</sub> | 80 | rad/s |
+|Passband Ripple   | A<sub>p</sub> | 0.1 | dB |
+|Stopband Attenuation for filter 1     | A<sub>s,30</sub> | 30 | dB |
+|Stopband Attenuation for filter 2   | A<sub>s, 60</sub> | 60 | dB |
 
 
 ### Deriving the Kaiser Window parameters
