@@ -43,7 +43,7 @@ The project has the following requirements.
 
 ### Deriving Filter specifications
 
-The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I employed the concepts of the sampling theory. For the complete derivation, check the [final report](Report/Final Report.pdf).
+The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I employed the concepts of the sampling theory. For the complete derivation, check the [final report]("Report/Final Report.pdf").
 
 ###### Provided Parameters
 |  Parameter  | Symbol | Value | Units | 
