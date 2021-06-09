@@ -49,7 +49,7 @@ The passband gains, passband and stopband edges with widest possible transition 
   <img src="Results/m_Folder.png" width="800" height="200" />
 </p>
 
-First, consider the continuous time signal <I>x<sub>c</sub>(t) = 2$\cos(2&pi;f&theta;t)$</I> that corresponds to the given sequence x[n] = 2cos(2&pi;f<sub>0</sub>nT<sub>s</sub>), which is bandlimited. Using the Fourier transform, we obtain the frequency representation of the x<sub>c</sub>(t), denoted by 𝑋<sub>c</sub>(&Omega;) as follows:
+First, consider the continuous time signal <I>x<sub>c</sub>(t)</I> = 2$\cos(2&pi;f&theta;t)$ that corresponds to the given sequence x[n] = 2cos(2&pi;f<sub>0</sub>nT<sub>s</sub>), which is bandlimited. Using the Fourier transform, we obtain the frequency representation of the x<sub>c</sub>(t), denoted by 𝑋<sub>c</sub>(&Omega;) as follows:
 
 <p align="center">
   <img src="Results/Equations/Eq01.png" />
