@@ -57,12 +57,18 @@ First, consider the continuous time signal <I>x<sub>c</sub>(t) = 2cos(2&pi;f&the
 
 By sampling the <I>x<sub>c</sub>(t)</I> at a sampling rate of <I>f<sub>s</sub>( ≥ 2f<sub>0</sub>)</I>, we can obtain the <I>x<sub>s</sub>(t)</I> with the Fourier Transform of <I>X<sub>s</sub>(&Omega;)</I> as follows: 
 
+<p align="center">
+  <img src="Results/Equations/Eq02.png" />
+</p>
 
-𝑥𝑠(𝑡)=Σ𝑥𝑐(𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞ = Σ2𝑐𝑜𝑠(2π𝑓0𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞
-and 𝑋𝑠(Ω)=1𝑇𝑠Σ𝑋𝑐(Ω−2𝜋𝑓𝑠𝑘)∞𝑘= −∞= 2𝜋𝑇𝑠Σ[𝛿(Ω−Ω𝑠𝑘−Ω0 )+ 𝛿(Ω−Ω𝑠𝑘+Ω0 )]∞𝑘= −∞
-Now the given signal 𝑥[𝑛] can be obtained as follows: 𝑥[𝑛]= ∫𝑥𝑐(𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞−∞ 𝑑𝑡= 𝑥𝑐(𝑛𝑇𝑠)= 2𝑐𝑜𝑠(2π𝑓0𝑛𝑇𝑠)
-Fig. 2.1: Structure of the M-fold Interpolator
-3
+Now the given signal  <I>x[n]</I> can be obtained as follows: 
+
+<p align="center">
+  <img src="Results/Equations/Eq03.png" />
+</p>
+
+
+
 The Discrete-Time-Fourier-Transform (DTFT) of 𝑥[𝑛], which is denoted by 𝑋(𝜔), can be obtained by the evaluating 𝑋𝑠(Ω) at Ω=𝜔𝑇𝑠⁄. 𝑋(𝜔)= 𝑋𝑠(Ω)|Ω= 𝜔𝑇𝑠= 2𝜋𝑇𝑠Σ[𝛿( 𝜔𝑇𝑠−2𝜋𝑓𝑠𝑘−2π𝑓0 )+ 𝛿( 𝜔𝑇𝑠−2𝜋𝑓𝑠𝑘+2π𝑓0 )]∞𝑘= −∞ 𝑋(𝜔)= 2𝜋𝑇𝑠Σ[𝛿( 1𝑇𝑠(𝜔−𝜔𝑠𝑘−𝜔0) )+ 𝛿( 1𝑇𝑠(𝜔−𝜔𝑠𝑘+𝜔0))], 𝑤ℎ𝑒𝑟𝑒 𝜔𝑠= 2𝜋,𝜔0=2𝜋𝑓0𝑇𝑠 ∞𝑘= −∞ Using the relationship of 𝛿(𝑥𝑇)=𝑇𝛿(𝑥) 𝑋(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠𝑘−𝜔0)+ 𝛿( 𝜔−𝜔𝑠𝑘+𝜔0)]∞𝑘= −∞
 Now consider the upsampled signal, 𝑢[𝑛] by a factor 𝑀 ∈ ℤ+ and its Fourier transform 𝑈(𝜔). 𝑢[𝑛]= {𝑥[𝑛𝑀],𝑖𝑓 𝑀|𝑛 0,𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 𝑈(𝜔)=𝑋(𝑀𝜔)= 2𝜋 Σ[𝛿( M𝜔−𝜔𝑠𝑘−𝜔0)+ 𝛿( M𝜔−𝜔𝑠𝑘+𝜔0)]∞𝑘= −∞ 𝑈(𝜔)=2𝜋 Σ[𝛿( M(𝜔−𝜔𝑠𝑘𝑀−𝜔0𝑀))+ 𝛿( M(𝜔−𝜔𝑠𝑘𝑀+𝜔0𝑀))]∞𝑘= −∞ 𝑈(𝜔)=2𝜋𝑀 Σ[𝛿( 𝜔−𝜔𝑠𝑘𝑀−𝜔0𝑀)+ 𝛿( 𝜔−𝜔𝑠𝑘𝑀+𝜔0𝑀)]∞𝑘= −∞ Now consider a sampled signal 𝑥𝑢[𝑛] at a sampling frequency 𝑓𝑠′=𝑀𝑓𝑠 with a Fourier transformation 𝑋𝑢(𝜔). 𝑋𝑢(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠′ 𝑘−𝜔0)+ 𝛿( 𝜔−𝜔𝑠′ 𝑘+𝜔0)], 𝑤ℎ𝑒𝑟𝑒 𝜔𝑠′ =𝑀𝜔𝑠∞𝑘= −∞ Since 𝜔𝑠′ 𝑘= 𝑀𝜔𝑠𝑘=2𝜋𝑓𝑠(𝑀𝑘), this has the same impact when taking the summation from −∞ to ∞ as with 2𝜋𝑓𝑠𝑘. By changing the summation variable to 𝑘′=𝑀𝑘: 𝑋𝑢(𝜔)=2𝜋 Σ[𝛿( 𝜔−𝜔𝑠𝑘′−𝜔0)+ 𝛿( 𝜔−𝜔𝑠𝑘′+𝜔0)]∞𝑘′= −∞ The objective of the interpolator is to process and convert a sequence sampled at a lower sampling frequency to a higher sampling frequency by a factor 𝑀 ∈ ℤ+. Hence by definition, 𝑦[𝑛] and 𝑥𝑢[𝑛] should be the same and that results 𝑌(𝜔) and 𝑋𝑢(𝜔) to be same.
 4
