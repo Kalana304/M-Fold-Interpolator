@@ -41,7 +41,10 @@ The project has the following requirements.
 
 The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I employed the concepts of the sampling theory. For the complete derivation, check the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
 
+<div align="center">
+  
 ###### Derived and Specified Parameters
+  
 |  Parameter  | Symbol | Value | Units | 
 | :----------------: |:------------:| :-------:| :--------: | 
 |Upsampling factor  | M | 4 | - | 
@@ -57,6 +60,7 @@ The passband gains, passband and stopband edges with widest possible transition 
 |Stopband Attenuation for filter 1     | A<sub>s,30</sub> | 30 | dB |
 |Stopband Attenuation for filter 2   | A<sub>s, 60</sub> | 60 | dB |
 
+</div>
 
 ### Deriving the Kaiser Window parameters
 
@@ -64,9 +68,8 @@ The passband gains, passband and stopband edges with widest possible transition 
 Since the requirement of this project does not need to manually implement the Kaiser windowing method for filter design, the command kaiserord on MATLAB was used to obtain the filter orders 𝑁<sub>𝑃, 30</sub> and 𝑁<sub>𝑃, 60</sub>. Due to the restrictions of the transition band obtained in the previous section, the orders of the two filters, 𝐻<sub>30</sub>(𝑧), 𝐻<sub>60</sub>(𝑧), are slightly higher compared to the theoretically derived filter orders 𝑁<sub>𝑇, 30</sub> and 𝑁<sub>𝑇, 60</sub>. To check out the theoratical derivation of the Kaiser Window parameters check the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
 </div>
 
-###### Derived Kaiser window parameters for 30dB filter (left) and 60dB filter (right)
-
 <div align="center">
+###### Derived Kaiser window parameters for 30dB filter (left) and 60dB filter (right)
 
 |  Parameter  | Value | Units |     |  Parameter  | Value | Units |
 | :----------------: |:------------:| :-------:| :----: | :----------------: |:------------:| :-------:| 
