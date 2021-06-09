@@ -81,13 +81,13 @@ Since the requirement of this project does not need to manually implement the Ka
 
 After the order of each filter 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were obtained, the command <I>fir1()</I> of MATLAB was used to obtain the coefficients of the filter for the given specifications.
 
-Based on the polyphase decomposition the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were implemented following Type-I design.
+Based on the polyphase decomposition the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were implemented following a Type-I design which is shown below.
 
 <p align = "center">
   <img src = "Results/Polyphase.png"/>
 </p>
 
-Next, the M-fold interpolator was implemented in the efficient structure derived during the class such that the computation complexity is reduced when processing a sequence. This is shown in the belo figure.
+Next, the M-fold interpolator was implemented in the efficient structure derived during the class such that the computation complexity is reduced when processing a sequence. This is shown in the below figure.
 
 <p align = "center">
   <img src = "Results/Efficient Implementation.png"/>
@@ -96,6 +96,23 @@ Next, the M-fold interpolator was implemented in the efficient structure derived
 In MATLAB, the delaying of the sequences obtained in Type-I implementation is done by shifting the row vectors by the corresponding number of samples.
 
 ### Filter Evaluation
+
+After the implementation of the filters and the M-fold interpolator in the efficient way, next is to evaluate the performance. For that, two methods were incorporated.
+
+#### Root Mean Square Error
+
+The two filters designed, 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧), were evaluated on the ability to re-sample the original sequence 𝑥[𝑛] by interpolating it by a factor of 4 to obtain an effective sampling rate of 800&pi; 𝑟𝑎𝑑/𝑠. For this, each of the two output sequences from the two interpolators, 𝑦<sub>30</sub>[𝑛] and 𝑦<sub>60</sub>[𝑛], is compared with the sequence 𝑥<sub>𝑢</sub>[𝑛] which is obtained by sampling the continuous-time signal at a sampling frequency of 800&pi; 𝑟𝑎𝑑/𝑠 using the performance metric RMSE.
+
+Before taking the RMSE, a correction to the output sequences should be done by removing the group delays of each filter from the corresponding output sequence. The group delays obtained were 13 and 19 samples for 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) respectively. Even though the polyphase filters may have their own group delays, the final group delay affecting the output of the LTI system is same as the overall filter implemented as it is.
+
+After making the adjustment, samples from 1000 ≤ 𝑛 ≤ 3000 from both the 𝑥<sub>𝑢</sub>[𝑛] and 𝑦<sub>𝑖</sub>[𝑛] are taken to measure the RMSE.
+
+#### Computational Complexity
+
+Next, the two filters were evaluated based on the computational complexity. The computational complexity was measured based on the total number of multiplications and additions performed for the input sequences they process. For this, the following evaluations were done.
+
+  * Evaluating the computational complexity between original implementation and the efficient implementation for each of the filter
+  * Comparing the computational complexity between the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) in their efficient implementation.
 
 ## RESULTS
 
