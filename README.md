@@ -49,14 +49,13 @@ The passband gains, passband and stopband edges with widest possible transition 
   <img src="Results/m_Folder.png" width="800" height="200" />
 </p>
 
-First, consider the continuous time signal x<sub>c</sub>(t) = 2$\cos(2&pi;f&theta;t)$ that corresponds to the given sequence x[n] = 2cos(2&pi;f<sub>0</sub>nT<sub>s</sub>), which is bandlimited. Using the Fourier transform, we obtain the frequency representation of the x<sub>c</sub>(t), denoted by 𝑋<sub>c</sub>(&Omega;) as follows:
+First, consider the continuous time signal <I>x<sub>c</sub>(t) = 2$\cos(2&pi;f&theta;t)$</I> that corresponds to the given sequence x[n] = 2cos(2&pi;f<sub>0</sub>nT<sub>s</sub>), which is bandlimited. Using the Fourier transform, we obtain the frequency representation of the x<sub>c</sub>(t), denoted by 𝑋<sub>c</sub>(&Omega;) as follows:
 
 <p align="center">
   <img src="Results/Equations/Eq01.png" />
 </p>
 
-
-By sampling the 𝑥𝑐(𝑡) at a sampling rate of 𝑓𝑠 ( ≥2𝑓0), we can obtain the 𝑥𝑠(𝑡) with the Fourier Transform of 𝑋𝑠(Ω) as follows: 𝑥𝑠(𝑡)=Σ𝑥𝑐(𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞ = Σ2𝑐𝑜𝑠(2π𝑓0𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞
+By sampling the x<sub>c</sub>(t) at a sampling rate of 𝑓𝑠 ( ≥2𝑓0), we can obtain the 𝑥𝑠(𝑡) with the Fourier Transform of 𝑋𝑠(Ω) as follows: 𝑥𝑠(𝑡)=Σ𝑥𝑐(𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞ = Σ2𝑐𝑜𝑠(2π𝑓0𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞𝑛 = −∞
 and 𝑋𝑠(Ω)=1𝑇𝑠Σ𝑋𝑐(Ω−2𝜋𝑓𝑠𝑘)∞𝑘= −∞= 2𝜋𝑇𝑠Σ[𝛿(Ω−Ω𝑠𝑘−Ω0 )+ 𝛿(Ω−Ω𝑠𝑘+Ω0 )]∞𝑘= −∞
 Now the given signal 𝑥[𝑛] can be obtained as follows: 𝑥[𝑛]= ∫𝑥𝑐(𝑛𝑇𝑠)δ(𝑡−𝑛𝑇𝑠)∞−∞ 𝑑𝑡= 𝑥𝑐(𝑛𝑇𝑠)= 2𝑐𝑜𝑠(2π𝑓0𝑛𝑇𝑠)
 Fig. 2.1: Structure of the M-fold Interpolator
