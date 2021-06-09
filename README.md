@@ -65,8 +65,8 @@ The passband gains, passband and stopband edges with widest possible transition 
 ### Deriving the Kaiser Window parameters
 
 <div align="justify">
-Since the requirement of this project does not need to manually implement the Kaiser windowing method for filter design, the command kaiserord on MATLAB was used to obtain the filter orders 𝑁<sub>𝑃, 30</sub> and 𝑁<sub>𝑃, 60</sub>. Due to the restrictions of the transition band obtained in the previous section, the orders of the two filters, 𝐻<sub>30</sub>(𝑧), 𝐻<sub>60</sub>(𝑧), are slightly higher compared to the theoretically derived filter orders 𝑁<sub>𝑇, 30</sub> and 𝑁<sub>𝑇, 60</sub>. To check out the theoratical derivation of the Kaiser Window parameters check the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
-</div>
+Since the requirement of this project does not need to manually implement the Kaiser windowing method for filter design, the command kaiserord on MATLAB was used to obtain the filter orders 𝑁<sub>𝑃, 30</sub> and 𝑁<sub>𝑃, 60</sub>. Due to the restrictions of the transition band obtained in the previous section, the orders of the two filters, 𝐻<sub>30</sub>(𝑧), 𝐻<sub>60</sub>(𝑧), are slightly higher compared to the theoretically derived filter orders 𝑁<sub>𝑇, 30</sub> and 𝑁<sub>𝑇, 60</sub>. To check out the theoratical derivation of the Kaiser Window parameters check the </div>[final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
+
 
 <div align="center">
   
