@@ -116,11 +116,7 @@ Next, the two filters were evaluated based on the computational complexity. The 
 
 ## RESULTS
 
-### Time and Frequency domain analysis of the designed filters
-
-### Polyphase Filter Magnitude Spectra
-
-### Filter Evaluation
+In this section, the results of the design and implementation of the M-fold interpolators for 30dB and 60dB stopband attenuations are presented in three subsections. First, the time-domain and frequency-domain analysis of the two anti-imaging filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) are analyzed. Second, the polyphase decomposition of the two filters is exploited followed by the efficient implementation of the M-fold interpolator. Last, the filters are evaluated based on the RMSE values comparing 𝑦<sub>𝑖</sub>[𝑛] with 𝑥<sub>𝑢</sub>[𝑛] and the computational complexity based on the total number of multiplications and additions performed for the input sequences they process. The details can be found in the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
 
 ## CONCLUSION
 <div align="justify">
@@ -131,3 +127,11 @@ Further, the results depicts that the M-fold Interpolator is not only computatio
 When designing the Anti-Imaging filters, the flexibility of the Kaiser Window has been incorporated. Since the ideal filters cannot be practically implemented, it is advantageous to be able to make a flexible filter of which the limitations can be controlled. This is a practical approach since small imperfections such as pass band ripple will not cause an observable difference in the filtered output. This means that the parameters of the filter can be adjusted until the differences between the filter output and an ideal output become indistinguishable for all the practical purposes. </div>
 
 ## REFERENCES
+
+'''
+Alan V. Oppenheim and Ronald W. Schafer. 2009. Discrete-Time Signal Processing (3rd. ed.). Prentice Hall Press, USA.
+'''
+
+'''
+Adams, M. D. (2013). Multiresolution signal and geometry processing: filter banks, wavelets, and subdivision (version: 2013-09-26). Michael Adams.
+'''
