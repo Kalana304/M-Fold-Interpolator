@@ -43,7 +43,7 @@ The project has the following requirements.
 
 ### Deriving Filter specifications
 
-The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I employed the concepts of the sampling theory. For the complete derivation, check the [final report]("../Report").
+The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I employed the concepts of the sampling theory. For the complete derivation, check the [final report]("https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf").
 
 ###### Provided Parameters
 |  Parameter  | Symbol | Value | Units | 
