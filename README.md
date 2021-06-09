@@ -14,10 +14,6 @@ This report discusses the design and implementation of an M-fold interpolator, w
   
 [RESULTS](#results)
 
-* [Time and Frequency domain analysis of the designed filters](#analysis)
-* [Polyphase Filter Magnitude Spectra](#spectra)
-* [Filter Evaluation](#eval)
-
 [CONCLUSION](#conclusion)
 
 [REFERENCES](#references)
@@ -128,10 +124,10 @@ When designing the Anti-Imaging filters, the flexibility of the Kaiser Window ha
 
 ## REFERENCES
 
-'''
-Alan V. Oppenheim and Ronald W. Schafer. 2009. Discrete-Time Signal Processing (3rd. ed.). Prentice Hall Press, USA.
-'''
+```
+[1] Alan V. Oppenheim and Ronald W. Schafer. 2009. Discrete-Time Signal Processing (3rd. ed.). Prentice Hall Press, USA.
+```
 
-'''
-Adams, M. D. (2013). Multiresolution signal and geometry processing: filter banks, wavelets, and subdivision (version: 2013-09-26). Michael Adams.
-'''
+```
+[2] Adams, M. D. (2013). Multiresolution signal and geometry processing: filter banks, wavelets, and subdivision (version: 2013-09-26). Michael Adams.
+```
