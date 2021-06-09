@@ -46,7 +46,7 @@ The project has the following requirements.
 The passband gains, passband and stopband edges with widest possible transition width are derived in this section. To derive them, I will be employing the concepts of the sampling theory.
 
 <p align="center">
-  <img src="Results/m_Folder.png" width="800" height="200" />
+  <img src="Results/m_Folder.png" />
 </p>
 
 First, consider the continuous time signal x<sub>c</sub>(t) = 2$\cos(2&pi;f&theta;t)$ that corresponds to the given sequence x[n] = 2cos(2&pi;f<sub>0</sub>nT<sub>s</sub>), which is bandlimited. Using the Fourier transform, we obtain the frequency representation of the x<sub>c</sub>(t), denoted by 𝑋<sub>c</sub>(&Omega;) as follows:
