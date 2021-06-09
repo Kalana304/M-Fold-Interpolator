@@ -65,7 +65,7 @@ The passband gains, passband and stopband edges with widest possible transition 
 ### Deriving the Kaiser Window parameters
 
 <div align="justify">
-Since the requirement of this project does not need to manually implement the Kaiser windowing method for filter design, the command kaiserord on MATLAB was used to obtain the filter orders 𝑁<sub>𝑃, 30</sub> and 𝑁<sub>𝑃, 60</sub>. Due to the restrictions of the transition band obtained in the previous section, the orders of the two filters, 𝐻<sub>30</sub>(𝑧), 𝐻<sub>60</sub>(𝑧), are slightly higher compared to the theoretically derived filter orders 𝑁<sub>𝑇, 30</sub> and 𝑁<sub>𝑇, 60</sub>. To check out the theoratical derivation of the Kaiser Window parameters check the </div> [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
+Since the requirement of this project does not need to manually implement the Kaiser windowing method for filter design, the command kaiserord on MATLAB was used to obtain the filter orders 𝑁<sub>𝑃, 30</sub> and 𝑁<sub>𝑃, 60</sub>. Due to the restrictions of the transition band obtained in the previous section, the orders of the two filters, 𝐻<sub>30</sub>(𝑧), 𝐻<sub>60</sub>(𝑧), are slightly higher compared to the theoretically derived filter orders 𝑁<sub>𝑇, 30</sub> and 𝑁<sub>𝑇, 60</sub>. To check out the theoratical derivation of the Kaiser Window parameters check the final report.
 
 
 <div align="center">
@@ -136,7 +136,7 @@ Next, the two filters were evaluated based on the computational complexity. The 
 ## RESULTS
 
 <div align="justify">
-In this section, the results of the design and implementation of the M-fold interpolators for 30dB and 60dB stopband attenuations are presented in three subsections. First, the time-domain and frequency-domain analysis of the two anti-imaging filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) are analyzed. Second, the polyphase decomposition of the two filters is exploited followed by the efficient implementation of the M-fold interpolator. Last, the filters are evaluated based on the RMSE values comparing 𝑦<sub>𝑖</sub>[𝑛] with 𝑥<sub>𝑢</sub>[𝑛] and the computational complexity based on the total number of multiplications and additions performed for the input sequences they process. The details can be found in the [final report](https://github.com/Kalana304/M-Fold-Interpolator/blob/main/Report/Final%20Report.pdf).
+In this section, the results of the design and implementation of the M-fold interpolators for 30dB and 60dB stopband attenuations are presented in three subsections. First, the time-domain and frequency-domain analysis of the two anti-imaging filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) are analyzed. Second, the polyphase decomposition of the two filters is exploited followed by the efficient implementation of the M-fold interpolator. Last, the filters are evaluated based on the RMSE values comparing 𝑦<sub>𝑖</sub>[𝑛] with 𝑥<sub>𝑢</sub>[𝑛] and the computational complexity based on the total number of multiplications and additions performed for the input sequences they process. The details can be found in the final report.
 </div>
 
 ## CONCLUSION
