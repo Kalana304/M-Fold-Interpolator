@@ -81,9 +81,13 @@ Since the requirement of this project does not need to manually implement the Ka
 
 After the order of each filter 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were obtained, the command <I>fir1()</I> of MATLAB was used to obtain the coefficients of the filter for the given specifications.
 
-Based on the polyphase decomposition the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were implemented following a Type-I design.
+Based on the polyphase decomposition the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were implemented following Type-I design.
 
-Next, the M-fold interpolator was implemented in the efficient structure derived during the class such that the computation complexity is reduced when processing a sequence.
+<p align = "center">
+  <img src = "Results/Polyphase.png"/>
+</p>
+
+Next, the M-fold interpolator was implemented in the efficient structure derived during the class such that the computation complexity is reduced when processing a sequence. This is shown in the belo figure.
 
 <p align = "center">
   <img src = "Results/Efficient Implementation.png"/>
