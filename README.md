@@ -68,16 +68,28 @@ Since the requirement of this project does not need to manually implement the Ka
 
 |  Parameter  | Value | Units |     |  Parameter  | Value | Units |
 | :----------------: |:------------:| :-------:| :----: | :----------------: |:------------:| :-------:| 
-|𝛿̃<sub>𝑝</sub>  | 0.00576 | - |  | 
-|𝛿̃<sub>a, 30</sub>   | 0.03162 | - |  |
-|𝛿<sub>30</sub>     | 0.00576 | - |  |
-|A<sub>a, 30</sub>   | 44.79 | dB |  |
-|A<sub>p, 30</sub>    | 0.1 | dB |  |
-|𝑁<sub>𝑇, 30</sub>   | 22 | - |  |
-|𝑁<sub>𝑃, 30</sub>     | 26 | - |  |
+|𝛿̃<sub>𝑝</sub>       | 0.00576 | - |  |𝛿̃<sub>𝑝</sub>      | 0.00576 | - |
+|𝛿̃<sub>a, 30</sub>   | 0.03162 | - |  |𝛿̃<sub>a, 30</sub>  | 0.001 | - |
+|𝛿<sub>30</sub>      | 0.00576 | - |  |𝛿<sub>30</sub>     | 0.001 | - |
+|A<sub>a, 30</sub>    | 44.79 | dB |  |A<sub>a, 30</sub>  | 60 | dB |
+|A<sub>p, 30</sub>    | 0.1 | dB |  |A<sub>p, 30</sub>    | 0.1 | dB |
+|𝑁<sub>𝑇, 30</sub>   | 22 | - |  |𝑁<sub>𝑇, 30</sub>   | 30 | - |
+|𝑁<sub>𝑃, 30</sub>   | 26 | - |  |𝑁<sub>𝑃, 30</sub>   | 38 | - |
 
 
 ### Polyphase Filter Implementation
+
+After the order of each filter 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were obtained, the command <I>fir1()</I> of MATLAB was used to obtain the coefficients of the filter for the given specifications.
+
+Based on the polyphase decomposition the two filters 𝐻<sub>30</sub>(𝑧) and 𝐻<sub>60</sub>(𝑧) were implemented following a Type-I design.
+
+Next, the M-fold interpolator was implemented in the efficient structure derived during the class such that the computation complexity is reduced when processing a sequence.
+
+<p align = "center">
+  <img src = "Results/Efficient Implementation.png"/>
+</p>
+
+In MATLAB, the delaying of the sequences obtained in Type-I implementation is done by shifting the row vectors by the corresponding number of samples.
 
 ### Filter Evaluation
 
