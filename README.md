@@ -43,7 +43,7 @@ The passband gains, passband and stopband edges with widest possible transition 
 
 <div align="center">
   
-###### Derived and Specified Parameters
+###### *Derived and Specified Parameters*
   
 |  Parameter  | Symbol | Value | Units | 
 | :----------------: |:------------:| :-------:| :--------: | 
@@ -69,7 +69,8 @@ Since the requirement of this project does not need to manually implement the Ka
 </div>
 
 <div align="center">
-###### Derived Kaiser window parameters for 30dB filter (left) and 60dB filter (right)
+  
+###### *Derived Kaiser window parameters for 30dB filter (left) and 60dB filter (right)*
 
 |  Parameter  | Value | Units |     |  Parameter  | Value | Units |
 | :----------------: |:------------:| :-------:| :----: | :----------------: |:------------:| :-------:| 
