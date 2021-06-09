@@ -66,7 +66,7 @@ Since the requirement of this project does not need to manually implement the Ka
 
 ###### Derived Kaiser window parameters for 30dB filter (left) and 60dB filter (right)
 
-<center>
+<div align="center">
 
 |  Parameter  | Value | Units |     |  Parameter  | Value | Units |
 | :----------------: |:------------:| :-------:| :----: | :----------------: |:------------:| :-------:| 
@@ -78,7 +78,7 @@ Since the requirement of this project does not need to manually implement the Ka
 |𝑁<sub>𝑇, 30</sub>   | 22 | - |  |𝑁<sub>𝑇, 30</sub>   | 30 | - |
 |𝑁<sub>𝑃, 30</sub>   | 26 | - |  |𝑁<sub>𝑃, 30</sub>   | 38 | - |
 
-</center>
+</div>
 
 ### Polyphase Filter Implementation
 
