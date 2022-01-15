@@ -7,10 +7,10 @@ This report discusses the design and implementation of an M-fold interpolator, w
 
 [METHODOLOGY](#methodology)
 
-* [Deriving Filter specifications](#derivation)
-* [Deriving the Kaiser Window parameters](#kaiser)
-* [Polyphase Filter Implementation](#implementation)
-* [Filter Evaluation](#evaluation)
+* [Deriving Filter specifications](#deriving-filter-specifications)
+* [Deriving the Kaiser Window parameters](#deriving-the-kaiser-window-parameters)
+* [Polyphase Filter Implementation](#polyphase-filter-implementation)
+* [Filter Evaluation](#filter-evaluation)
   
 [RESULTS](#results)
 
